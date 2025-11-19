@@ -98,6 +98,16 @@ MC_game_win() {
     echo "You win!"
 }
 
+cooked() {
+    clear
+    echo "WHY THE FUCK DID YOU TRY TO DO THAT BULLSHIT, YOU FUCKING RETARD, SAY FUCKING GOODBYE TO MC.sh, I AM DELETING THAT FUCKING SHIT OFF YOUR FUCKING COMPUTER"
+    cd mnt/stateful_partition/murkmod/plugins/MC.sh && rm -f MC.sh
+    touch mnt/stateful_partition/no_mc_tard
+        if [ "mnt/stateful_partition/no_mc_tard" ]; then
+            cd mnt/stateful_partition/murkmod/plugins/MC.sh && rm -f MC.sh
+    fi
+}
+
 MC_game_lose() {
     clear
     echo "You died you fucking retard."
