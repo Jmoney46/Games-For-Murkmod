@@ -71,6 +71,10 @@ MC_game_continue() {
     echo "Press a number from 1–10 to damage the Ender Dragon!"
     read damage
 
+    if [ "$damage" > "10" ]; then
+        cooked
+    fi
+
     if [ "$damage" = "6" ]; then
         read -p "Press g to win!"
         MC_game_win
