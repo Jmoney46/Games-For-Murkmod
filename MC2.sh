@@ -79,4 +79,14 @@ read choice
       4) title_1 ;;
       500) commands
     esac
+}
+
+  chop() {
+    clear
+    echo "You see a tree, would you like to chop it down?"
+    echo "Y or N"
+    read choice
     
+    if [ "$choice" = "y" ]; then
+      clear
+      echo "Wow, you got "
